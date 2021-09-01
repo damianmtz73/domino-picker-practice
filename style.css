@@ -3,27 +3,31 @@
 }
 
 body{
-    background-color: darksalmon;
+    background-color: goldenrod;
 }
 body > h1{
     color: white;
 
 }
-.domino-list{
+
+main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    color: rebeccapurple;
 }
 
-.domino-list > li{
+main > .domino{
+    /* display: none; */
     list-style-type: none;
     font-size: 7rem;
     transition: transform .5s;
 }
-.domino-list > li:hover{
+main > .domino:hover{
     transform: scale(1.25) rotate(.5turn);
 }
-.selected{
-    color: white;
-    filter: drop-shadow(5px 0 .25rem rgb(59, 58, 58) );
+main > .domino .selected{
+    /* display: block; */
+     color: white;
+    filter: drop-shadow(5px 0 .25rem white);
 }
